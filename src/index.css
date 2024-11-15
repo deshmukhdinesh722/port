@@ -1,0 +1,247 @@
+
+body{
+  background-color: rgb(32, 32, 32);
+  font-family: Calibri;
+  color:white;
+}
+button{
+  background-color: white;
+  color: black;
+  opacity: 0.8;
+  border: none;
+  border-radius: 25px;
+}
+.footer{
+  background-color: rgb(61, 61, 60);
+  padding: 0;
+  height: 150px;
+  justify-items: center;
+}
+.footer .footer-text{
+  text-align: center;
+  font-size: 18px;
+}
+.footer .footer-inside{
+  text-align: center;
+  font-size: 18px;
+}
+.footer .footer-last{
+text-align: center;
+}
+
+.header {
+background-color:rgb(107, 65, 2) ;
+height: 60px;
+display: flex;
+padding-bottom: 20px;
+}
+.header button{
+  color: rgb(107, 65, 2) ;
+height: 30px;
+width: 90px;
+cursor: pointer;
+text-align: center;
+font-size: 15px;
+padding-top: 5px;
+}
+.containor1{
+  padding: 60px;
+  font-size: 30px;
+  display: flex;
+}
+.containor1 .first-left{
+  width: 50%;
+}
+.containor1 .first-right{
+  width: 50%;
+}
+.name{
+  padding: 0px;
+  padding-left: 20px;
+  width: 65%;
+}
+.header .menu{
+  display: flex;
+  gap: 20px;
+  text-align: right;
+  padding: 8px;
+  font-size: 20px;
+}
+
+.menu .inline-menu{
+  font-size: 15px;
+  gap: 20px;
+}
+
+.containor2{
+text-align: center;
+font-size: 30px;
+
+}
+.containor2 .con-main-title{
+font-size: 25px;
+}
+.containor2 .edu-card-outer{
+  padding-left: 130px;
+text-align: center;
+font-size: 30px;
+gap: 30px;
+opacity: 0.8;
+display: flex;
+}
+.containor2 .edu-card{
+  border-radius: 25px;
+  height: 250px;
+  width: 400px;
+  border-color: white;
+  background-color:rgb(61, 60, 60) ;
+ 
+}
+.containor2 .edu-card:hover{
+  background-color: rgb(107, 65, 2) ;
+  transform: translateY(-2px);
+  transform: scale(1.1);
+  z-index: 2; 
+  transition: all 0.5s ease;
+}
+Link{
+  color: white;
+}
+.signin{
+  background-color: white;
+  border-radius: 25px;
+  color:rgb(107, 65, 2) ;
+  width: 60px;
+  margin-left: 350px;
+  padding: 5px;
+  font-size: 15px;
+}
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #333;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  z-index: 1000;
+}
+
+.popup h2 {
+  margin-top: 0;
+}
+
+.popup-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.popup-buttons button {
+  padding: 10px 20px;
+  background-color: #555;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.popup-buttons button:hover {
+  background-color:rgb(107, 65, 2) ;
+}
+
+/* Overlay */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 500;
+}
+
+@media (max-width: 768px) {
+  .header {
+    background-color: rgb(155, 97, 9);
+    height: 40px;
+    color:white
+    }
+    .containor1{
+      padding: 60px;
+      font-size: 25px;
+      display: inline;
+    }
+    .containor1 .first-left{
+      width: 100%;
+    }
+    .containor1 .first-right{
+      width: 100%;
+    }
+    .name{
+      padding: 0px;
+      padding-left: 20px;
+      width: 100%;
+      font-size: 12px;
+    }
+     .header .menu{
+      display: none;
+    }
+    .footer{
+      background-color: rgb(61, 60, 60);
+      padding: 0;
+      height: 200px;
+      justify-items: center;
+    }
+    .footer .footer-text{
+      text-align: center;
+      font-size: 12px;
+      padding-top: 10px;
+    }
+    .footer .footer-inside{
+      text-align: center;
+      font-size: 15px;
+    }
+    .footer .footer-last{
+    text-align: center;
+    }
+    .containor2{
+      text-align: center;
+      font-size: 30px;
+      display: inline;
+      
+      }
+      .containor2 .con-main-title{
+      font-size: 25px;
+      }
+    .containor2 .edu-card-outer{
+      padding-left: 130px;
+    text-align: center;
+    font-size: 25px;
+    gap: 30px;
+    opacity: 0.8;
+    display: inline;
+    }
+    .containor2 .edu-card{
+      width: 325px;
+      padding-left: 20px;
+      height: 150px;
+
+
+
+     
+    }
+    .containor2 .edu-card:hover{
+      background-color: rgb(107, 65, 2) ;
+      transform: translateY(-2px);
+      transform: scale(1.1);
+      z-index: 2; 
+      transition: all 0.5s ease;
+    }
+}
