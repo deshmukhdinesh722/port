@@ -12,6 +12,16 @@ function Home() {
     const project3='Whitespace Interior - Bussiness Website';
   const project3dis='Tools:HTML, CSS , JS , NETLIFY A Well-featured Bussiness website for Information.'
 
+  function openImg(){
+    document.getElementById('popup-title').innerHTML='';
+    document.getElementById('discription').innerHTML='';
+    const popup = document.getElementById('popup');
+    const overlay = document.querySelector('.overlay');
+    if (popup && overlay ) {
+      popup.style.display = 'block';
+      overlay.style.display = 'block';
+    }
+  }
   function openPopup() {
     document.getElementById('popup-title').innerHTML=project1;
     document.getElementById('discription').innerHTML=project1dis;
@@ -33,6 +43,7 @@ function Home() {
     if (popup && overlay ) {
       popup.style.display = 'block';
       overlay.style.display = 'block';
+      popup.innerHTML="HELLO"
     }
   }
 
@@ -67,10 +78,35 @@ function Home() {
     I'm Dinesh <br/>
     Software Developer
   </h1>
+
   </div>
   <div className="first-right">
   </div>
 </div>
+<div className="containor2">
+  <div className="con-main-title">
+    <h2>TECHNICAL SKILLS</h2>
+  </div>
+  <div className="edu-card-outer">
+  <div className="edu-card" >
+    <h4>Programming
+    </h4>
+    <h6>JavaScript, React.JS, NodeJS, Java, <br/> Python,C, C++, HTML, CSS, PHP, SQL<br/>
+    </h6>
+</div>
+  <div className="edu-card" >
+  <h4>Database</h4>
+    <h6>MySql, MongoDB, Firebase<br/>
+    </h6>
+  </div>
+  <div className="edu-card" >
+  <h4>Tools</h4>
+    <h6> Git, GitHub, GitLab, WordPress, <br/>ChatGPT, Figma                              <br/>
+    </h6>
+  </div>
+  </div>
+ 
+</div> <br/> <br/>
 <div className="containor2">
   <div className="con-main-title">
     <h2>PROJECTS</h2>
@@ -92,6 +128,26 @@ function Home() {
     <h6>HTML, CSS, Netlify<br/>
     </h6>
   </div>
+  </div>
+  
+</div> <br/> <br/>
+<div className="containor2">
+  <div className="con-main-title">
+    <h2>CERTIFICATION</h2>
+  </div>
+  <div className="edu-card-outer">
+  <div className="edu-card" >    
+    <h4>ChatGPT by GUVI</h4><br/>
+   
+</div>
+<div className="edu-card" >
+    <h4>Web Development by<br/> TechnoHacks</h4>
+    
+</div>
+<div className="edu-card" >
+    <h4>Collage Quantum 2023 <br/>Mock Placement</h4>
+   
+</div>
   </div>
   
 </div> <br/> <br/>
@@ -126,11 +182,15 @@ function Home() {
 <div className="popup" id="popup">
   <h2 id="popup-title"></h2>
   <p id="discription">This is a detailed description of the project.</p>
+
   <div className="popup-buttons">
     <button onClick={closePopup}>Close</button>
   
   </div></div>
+
+  
 </div>
+
 
     </>
   )
